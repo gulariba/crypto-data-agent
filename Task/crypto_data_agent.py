@@ -6,8 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # (Agar tum GPT se sawal karoge to ye key lagegi — abhi hum sirf Binance se data le rahe hain, is liye optional hai)
-openai_api_key = os.getenv("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")
-
+openai_api_key = os.getenv("secret key")
 # Binance API se crypto price lene wala function
 def get_crypto_price(symbol="BTCUSDT"):
     url = f"https://api.binance.com/api/v3/ticker/price?symbol={symbol}"
